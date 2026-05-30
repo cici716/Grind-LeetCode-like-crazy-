@@ -13,12 +13,12 @@ public class mergeKLists {
                 queue.offer(lists[i]);
             }
         }
-        //创建一个dummy
+        //创建一个dummy  将当前指针指向dumm
         ListNode dummyHead = new ListNode(0),curr = dummyHead;
         while (!queue.isEmpty()) {
             ListNode top = queue.poll();
             curr.next=top;
-            curr=curr.next;
+            curr=curr.next;//注意将当前指针移动到下一个接节点
             if (top.next != null)
                 queue.offer(top.next);
         }
