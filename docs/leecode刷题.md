@@ -10,7 +10,7 @@ https://www.bilibili.com/video/BV1Ly4y1871d/?spm_id_from=333.788.videopod.episod
 
 https://www.bilibili.com/video/BV1bP411c7oJ/?spm_id_from=333.337.search-card.all.click&vd_source=746d8a251a4a658573b141cee21d4f94
 
-![77793145099](D:\高倩\Documents\assets\1777931450999.png)
+![77793145099](assets/1777931450999.png)
 
 解题思路:有条件（有序数组），定义一个从左的指针和从右的指针，如果两数相加=目标数，返回答案；
 
@@ -25,7 +25,7 @@ https://www.bilibili.com/video/BV1bP411c7oJ/?spm_id_from=333.337.search-card.all
 
 https://www.bilibili.com/video/BV1bP411c7oJ/?spm_id_from=333.337.search-card.all.click&vd_source=746d8a251a4a658573b141cee21d4f94
 
-![77793143472](D:\高倩\Documents\assets\1777931434727.png)先排序，然后第一个数字用for循环中的i 自增来表示，其他两个指针l=i+1，r=数组长度减1
+![77793143472](assets/1777931434727.png)先排序，然后第一个数字用for循环中的i 自增来表示，其他两个指针l=i+1，r=数组长度减1
 
 注：重复数字需要跳过
 
@@ -57,7 +57,7 @@ left=0，r=height.length-1，先计算初始面积
 
 https://www.bilibili.com/video/BV1Qg411q7ia/?vd_source=746d8a251a4a658573b141cee21d4f94
 
-![77972996002](D:\找工作-开发\找工作2026\刷题\assets\1779729960026.png)
+![77972996002](assets/1779729960026.png)
 
 定义两个双向双指针 如果前缀最大值比后缀最大值小， 那么左边这个木桶的容量就是前缀最大值-当前高度 算完之后指针向右扩展
 
@@ -65,11 +65,11 @@ https://www.bilibili.com/video/BV1Qg411q7ia/?vd_source=746d8a251a4a658573b141cee
 
 ## 同向双指针
 
-![77793135163](D:\高倩\Documents\assets\1777931351631.png)
+![77793135163](assets/1777931351631.png)
 
 
 
-![77793137406](D:\高倩\Documents\assets\1777931374064.png)
+![77793137406](assets/1777931374064.png)
 
 ### 283 移动零
 
@@ -81,7 +81,7 @@ https://www.bilibili.com/video/BV1tZtVeUE2o/?spm_id_from=333.1387.search.video_c
 
 3.
 
-![77793139464](D:\高倩\Documents\assets\1777931394647.png)
+![77793139464](assets/1777931394647.png)
 
 定义两个指针，同时从左往右移，当右指针指向的元素为0，就往右移动右指针，一直到右指针指向的数不为0，将左右指针的元素交换（右指针不为0就交换），左指针右移，右指针右移，直到右指针到达数组的尽头
 
@@ -158,7 +158,7 @@ public int maxSubArray(int[] nums) {
 
 先把区间左端点排序
 
-![78068705720](D:\找工作-开发\找工作2026\刷题\assets\1780687057208.png)
+![78068705720](assets/1780687057208.png)
 
 这样,只需要比较当前阶段的左端点是否大于上一个阶段的右端点,如果小于就合并区间,如果大于 上一区间就永远不可能跟剩下的有交集,直接把上一区间加进答案
 
@@ -191,13 +191,13 @@ https://www.bilibili.com/video/BV13ox5eHE9n/?spm_id_from=333.1387.search.video_c
 
 1.最简单的方法是把原数组+k放到新数组里面,超过数组长度就减去k,但是这样空间复杂度是O(n),如果题目要求用O(1)的空间复杂度的话就不行
 
-![78073189872](D:\找工作-开发\找工作2026\刷题\assets\1780731898721.png)
+![78073189872](assets/1780731898721.png)
 
 2.O(1)空间复杂度的
 
 现将原数组反转 答案数组就是反转后的数组 前k个数组再反转 后面的数组再反转 
 
-![78073239101](D:\找工作-开发\找工作2026\刷题\assets\1780732391016.png)
+![78073239101](assets/1780732391016.png)
 
 ```java
 public void rotate(int[] nums, int k) {
@@ -224,7 +224,7 @@ https://space.bilibili.com/24779699/search?keyword=238
 
 所以用2个数组 前缀积 和后缀积 相乘  但是这样会用到额外空间,优化方法为在原地相乘 
 
-![78082355020](D:\找工作-开发\找工作2026\刷题\assets\1780823550209.png)
+![78082355020](assets/1780823550209.png)
 
 ```java
 int [] ans=new int [nums.length];
@@ -242,7 +242,7 @@ return ans;
 
 ### 560 和为K的子数组
 
-![78093371774](D:\找工作-开发\找工作2026\刷题\assets\1780933717748.png)
+![78093371774](assets/1780933717748.png)
 
 用前缀和+哈希表  
 
@@ -258,7 +258,7 @@ return ans;
 
 ### 209 长度最小的子数组
 
-![77799031859](D:\高倩\Documents\assets\1777990318599.png)
+![77799031859](assets/1777990318599.png)
 
 定义一个右端点 当满足要求时 取答案最小值 并且将左端点右移 总和减去左端点那个数
 
@@ -331,11 +331,11 @@ return ans;
 
 # 二分查找
 
-![77799045726](D:\高倩\Documents\assets\1777990457266.png)
+![77799045726](assets/1777990457266.png)
 
 一种时间复杂度为logn的算法，主要用于有序数组
 
-![77799051542](D:\高倩\Documents\assets\1777990515429.png)
+![77799051542](assets/1777990515429.png)
 
 其实我感觉这个就是开闭区间的不同写法，不同的区间临界值不一样
 
@@ -425,7 +425,7 @@ private int lowerBound(int[] nums, int target) {
 
 ### [153. 寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)
 
-![77799618643](D:\高倩\Documents\assets\1777996186431.png)
+![77799618643](assets/1777996186431.png)
 
 以最右边的数为基准，如果mid小于最右边的数，那么他在右边的线段上，将r=mid，反之l=mid
 
@@ -488,7 +488,7 @@ public int search(int[] nums, int target) {
 # 堆
 
 解题套路：
-![78008632027](D:\找工作-开发\找工作2026\刷题\assets\1780086320275.png)
+![78008632027](assets/1780086320275.png)
 
 ### 215 数组中的第k个最大元素
 
@@ -535,7 +535,7 @@ return ans;
 
 https://www.bilibili.com/video/BV1Ly4y1871d?spm_id_from=333.788.videopod.episodes&vd_source=746d8a251a4a658573b141cee21d4f94&p=6
 
-![78012549589](D:\找工作-开发\找工作2026\刷题\assets\1780125495894.png)
+![78012549589](assets/1780125495894.png)
 
 1.初始化一个小根堆存放所有链表的头结点
 
@@ -568,7 +568,7 @@ public ListNode mergeKLists(ListNode[] lists) {
 
 https://www.bilibili.com/video/BV1VN411J7S7?spm_id_from=333.788.videopod.sections&vd_source=746d8a251a4a658573b141cee21d4f94
 
-![77972268815](D:\找工作-开发\找工作2026\刷题\assets\1779722688153.png)
+![77972268815](assets/1779722688153.png)
 
 把这些高度想象成一座座山 从左往右看的时候 碰到比当前元素更高的就记录下来 同时把栈顶元素弹出来 把当前温度放进去 此时答案（天数）就是横坐标相减 
 
@@ -602,9 +602,9 @@ public int getMin() {
 
 ### [394. 字符串解码](https://leetcode.cn/problems/decode-string/)
 
-![77973823160](D:\找工作-开发\找工作2026\刷题\assets\1779738231604.png)
+![77973823160](assets/1779738231604.png)
 
-![77973808889](D:\找工作-开发\找工作2026\刷题\assets\1779738088897.png)
+![77973808889](assets/1779738088897.png)
 
 ```java
 public String decodeString(String s) {
@@ -650,9 +650,9 @@ public String decodeString(String s) {
 
 解题套路 两种1.快慢指针2.反转链表
 
-![77896948903](D:\高倩\Documents\assets\1778969489039.png)
+![77896948903](assets/1778969489039.png)
 
-![77896954572](D:\高倩\Documents\assets\1778969545723.png)
+![77896954572](assets/1778969545723.png)
 
 ### 206 反转链表 
 
@@ -908,7 +908,7 @@ return smallhead.next;
 
 时间复杂度：O(n) 因为每个节点进出Queue一次
 
-![78013660364](D:\找工作-开发\找工作2026\刷题\assets\1780136603646.png)
+![78013660364](assets/1780136603646.png)
 
 
 
@@ -1027,13 +1027,13 @@ DFS分为前序、中序、后序
 
 后续：左右根
 
-![78016278935](D:\找工作-开发\找工作2026\刷题\assets\1780162789356.png)
+![78016278935](assets/1780162789356.png)
 
 DFS有两个变种：从上往下 和从下往上
 
-![78016284016](D:\找工作-开发\找工作2026\刷题\assets\1780162840160.png)
+![78016284016](assets/1780162840160.png)
 
-![78016319485](D:\找工作-开发\找工作2026\刷题\assets\1780163194858.png)
+![78016319485](assets/1780163194858.png)
 
 
 
@@ -1055,7 +1055,7 @@ DFS有两个变种：从上往下 和从下往上
 
 由于可能是负数，所以结果还要和0比较最大值
 
-![78016742580](D:\找工作-开发\找工作2026\刷题\assets\1780167425803.png)
+![78016742580](assets/1780167425803.png)
 
 ```java
 public class maxPathSum {
@@ -1083,7 +1083,7 @@ public class maxPathSum {
 
 这是DFS的bottom down，拿到父节点的值然后往下传
 
-![78017013657](D:\找工作-开发\找工作2026\刷题\assets\1780170136574.png)
+![78017013657](assets/1780170136574.png)
 
 ```java
 public class sumNumbers {
@@ -1150,7 +1150,7 @@ boolean isSame(TreeNode l,TreeNode r){
 
 https://www.bilibili.com/video/BV14G411P7C1?spm_id_from=333.788.player.switch&vd_source=746d8a251a4a658573b141cee21d4f94&trackid=web_related_0.router-related-2589621-2f2gz.1780172287162.493
 
-![78017606620](D:\找工作-开发\找工作2026\刷题\assets\1780176066204.png)
+![78017606620](assets/1780176066204.png)
 
 中序遍历
 
@@ -1180,7 +1180,7 @@ public boolean isValidBST(TreeNode root) {
 
 https://www.bilibili.com/video/BV1W44y1Z7AR?spm_id_from=333.788.videopod.sections&vd_source=746d8a251a4a658573b141cee21d4f94
 
-![78021343273](D:\找工作-开发\找工作2026\刷题\assets\1780213432732.png)
+![78021343273](assets/1780213432732.png)
 
 分类讨论应该返回的东西
 
@@ -1289,7 +1289,7 @@ private void preorderdfs(TreeNode root,List<TreeNode> list) {
 
 https://www.bilibili.com/video/BV1XAYke2ETp/?spm_id_from=333.1387.search.video_card.click&vd_source=746d8a251a4a658573b141cee21d4f94
 
-![78026415082](D:\找工作-开发\找工作2026\刷题\assets\1780264150827.png)
+![78026415082](assets/1780264150827.png)
 
 前序遍历的第一个节点一定是根节点  找到跟节点在中序数组中的位置  前面到根节点的就是左子树 根节点到右边的就是右子树
 
