@@ -1,0 +1,23 @@
+package src.trick;
+
+public class findDuplicate {
+    public int findDuplicate(int[] nums) {
+        int slow = 0; // 0 一定不在环上，适合作为起点
+        int fast = 0;
+        while (true) {
+            slow = nums[slow]; // 等价于 slow = slow.next
+            fast = nums[nums[fast]]; // 等价于 fast = fast.next.next
+            if (fast == slow) { // 快慢指针移动到同一个节点
+                break;
+            }
+        }
+
+        int head = 0; // 再用一个指针，从起点出发
+        while (slow != head) {
+            slow = nums[slow];
+            head = nums[head];
+        }
+        return slow; // 入环口即重复元素
+
+    }
+}
