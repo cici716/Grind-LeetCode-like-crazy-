@@ -2,7 +2,7 @@ package src.dp;
 
 public class longestValidParentheses {
     public int longestValidParentheses(String s) {
-        if (s==null||s.length()<=2) return 0;
+        if (s==null||s.length()<2) return 0;
         int n=s.length();
         int[]dp=new int[n];
         int maxLen=0;
